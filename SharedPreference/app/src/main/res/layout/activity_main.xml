@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uo252406.sharedpreference.MainActivity">
+
+    <TextView
+        android:id="@+id/tVNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="24sp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/tVApellido"
+        android:layout_marginLeft="31dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tVApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        android:textSize="24sp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/tVEmail"
+        android:layout_marginLeft="31dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tVEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="24sp"
+        android:layout_marginBottom="103dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCargar"
+        android:layout_marginLeft="44dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/eTName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|textPostalAddress"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/eTApellido"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/eTApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/eTEmail"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/eTEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimpiar"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnCargar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargar"
+        android:onClick="getShared"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="154dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="162dp"
+        android:layout_height="48dp"
+        android:text="Limpiar"
+        android:onClick="clean"
+        app:layout_constraintLeft_toRightOf="@+id/btnCargar"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toLeftOf="@+id/btnGuardar"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="154dp" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:onClick="setShared"
+        android:layout_marginRight="-1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="154dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

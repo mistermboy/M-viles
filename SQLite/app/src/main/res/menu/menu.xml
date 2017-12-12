@@ -1,0 +1,14 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/ItemValorar"
+        android:icon="@android:drawable/btn_star_big_on"
+        android:title="valorate" />
+    <item
+        android:id="@+id/itemValoraciones"
+        android:icon="@android:drawable/alert_dark_frame"
+        android:title="valorations"
+        />
+</menu>

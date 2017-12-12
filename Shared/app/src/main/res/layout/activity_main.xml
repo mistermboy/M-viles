@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.uo252406.shared.MainActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
+        android:text="Nombre"
+        android:textSize="24sp"
+        android:layout_marginLeft="31dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="53dp" />
+
+
+    <TextView
+        android:id="@+id/tVApellido"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:text="Apellido"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:layout_marginLeft="31dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tVEmail"
+        android:layout_width="107dp"
+        android:layout_height="34dp"
+        android:text="Email"
+        android:textSize="24sp"
+
+        android:layout_marginLeft="31dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/tVApellido" />
+
+
+
+    <EditText
+        android:id="@+id/eTName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|textPostalAddress"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvName"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="53dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <EditText
+        android:id="@+id/eTApellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/eTName"
+        app:layout_constraintLeft_toRightOf="@+id/tVApellido"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/eTEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/eTApellido"
+        app:layout_constraintLeft_toRightOf="@+id/tVEmail"
+        android:layout_marginLeft="8dp" />
+
+
+    <Button
+        android:id="@+id/btnCargar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargar"
+        android:onClick="getShared"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="186dp" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="149dp"
+        android:layout_height="46dp"
+        android:text="Limpiar"
+        android:onClick="clean"
+        app:layout_constraintRight_toLeftOf="@+id/btnGuardar"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="186dp"
+        app:layout_constraintLeft_toRightOf="@+id/btnCargar"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/eTEmail"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteY="279dp"
+        tools:layout_editor_absoluteX="116dp" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:onClick="setShared"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="186dp" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,26 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/btn_dialog"
+        android:orderInCategory="100"
+        android:title="Settings" />
+
+
+    <item
+        android:id="@+id/action_fin"
+        android:icon="@android:drawable/btn_dialog"
+        android:orderInCategory="100"
+        android:title="Finish"
+        app:showAsAction="ifRoom" />
+    <item
+        android:orderInCategory="101"
+        android:title="Configuration" />
+    <item
+        android:id="@+id/action_atras"
+        android:orderInCategory="102"
+        android:title="Atrás" />
+
+</menu>
